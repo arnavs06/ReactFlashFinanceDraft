@@ -1,0 +1,113 @@
+.question-card {
+  font-family: 'Merriweather', serif;
+  width: 100%;
+  max-width: 800px; /* Increased width for a larger card */
+  padding: 40px;
+  border: 2px solid rgba(204, 162, 75, 0.3); /* Light gold border for visual depth */
+  border-radius: 12px; /* Softer, more rounded corners */
+  background-color: #ffffff; /* White background for better contrast */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); /* Darker shadow for more depth */
+  text-align: left; /* Align text to the left for better readability */
+  font-family: 'EB Garamond', serif; /* Elegant serif font for a more refined look */
+  margin: 40px auto; /* Center the card with spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.question-card:hover {
+  transform: translateY(-8px); /* Slightly raise the card when hovered */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.question-title {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem; /* Larger font for the question title */
+  margin-bottom: 20px;
+  color: rgb(4, 59, 92); /* Primary theme color for the title */
+  font-weight: bold;
+}
+
+.question-text {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem; /* Larger text for the question description */
+  margin-bottom: 40px;
+  color: rgb(60, 60, 60); /* Darker gray text for the question description */
+  line-height: 1.8; /* Increased line height for better readability */
+  max-width: 85%; /* Limit the width to prevent long lines */
+}
+
+.answer-section {
+  font-family: 'Merriweather', serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.answer-input {
+  width: 100%; /* Make input take full width of the card */
+  padding: 16px;
+  border: 2px solid rgba(204, 162, 75); /* Accent color for input border */
+  border-radius: 8px; /* Softer corners for input box */
+  font-size: 1.3rem; /* Slightly larger font for better readability */
+  color: rgb(4, 59, 92); /* Same primary color as the question title */
+  background-color: #f7f7f7; /* Light background for input */
+  transition: border-color 0.3s ease; /* Smooth border color change */
+}
+
+.answer-input:focus {
+  border-color: rgb(4, 59, 92); /* Primary color border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-btn {
+  width: 100%; /* Make the button take the full width of the card */
+  padding: 16px;
+  font-size: 1.3rem;
+  color: rgb(4, 59, 92); /* Blue text for the submit button */
+  background-color: white; /* White background for the submit button */
+  border: 2px solid rgb(4, 59, 92); /* Blue border to match the text color */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgb(4, 59, 92); /* Blue background on hover */
+  color: white; /* White text on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.submit-btn.disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+.feedback {
+  margin-top: 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.feedback.correct {
+  color: #28a745; /* Green for correct answers */
+}
+
+.feedback.incorrect {
+  color: #dc3545; /* Red for incorrect answers */
+}
+
+.reset-btn {
+  margin-top: 30px;
+  padding: 16px 32px;
+  font-size: 1.3rem;
+  background-color: rgba(204, 162, 75); /* Gold background for the reset button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reset-btn:hover {
+  background-color: rgba(179, 141, 62, 1); /* Darker gold on hover */
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+}
