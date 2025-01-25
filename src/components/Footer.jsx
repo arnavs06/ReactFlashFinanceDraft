@@ -3,7 +3,7 @@ import '../styles/index.css';
 
 const Footer = () => (
   <footer>
-    <p>&copy; 2025 IB FlashFinance. All rights reserved.</p>
+    <p>&copy; 2025 FlashFinance. All rights reserved.</p>
     <img src='../linkedinBanner.png'></img>
   </footer>
 );
