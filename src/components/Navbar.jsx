@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="logo">
-        <img src="FlashFinanceLogo.png" alt="FlashFinance Logo" />
+       <Link to='/'><img src="FlashFinanceLogo.png" alt="FlashFinance Logo" /></Link>
       </div>
       <nav>
         <ul>
