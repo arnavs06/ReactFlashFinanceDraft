@@ -1,5 +1,5 @@
 body {
-  font-family: 'Merriweather';
+  font-family: 'Verdana';
   margin: 0;
   padding: 0;
   color: rgb(0, 51, 81);
@@ -34,7 +34,7 @@ header {
 }
 
 header .logo {
-  font-family: 'Merriweather', serif;
+  font-family: 'Verdana', serif;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -106,11 +106,11 @@ nav ul li ul li a:hover {
 
 .hero h1 {
   font-size: 4rem;
-  font-family: 'Arial', serif;
+  font-family: 'Verdana', serif;
 }
 
 .hero p {
-  font-family: 'Merriweather', serif;
+  font-family: 'Verdana', serif;
   font-size: 1.5rem;
   margin-top: 1rem;
 }
