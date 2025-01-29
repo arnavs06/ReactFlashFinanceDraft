@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color:  rgb(4, 59, 92);
+  background-color: rgb(0, 51, 81);
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -116,7 +116,7 @@ nav ul li ul li a:hover {
 }
 
 .new-job-postings {
-  background-color: rgb(4, 59, 92);
+  background-color: rgb(0, 51, 81);
   padding: 3rem 1rem;
   text-align: center;
   margin-top: 4rem;
@@ -127,7 +127,7 @@ nav ul li ul li a:hover {
 .new-job-postings h2 {
   font-size: 2rem;
   color: white;
-  background-color: rgb(4, 59, 92);
+  background-color: rgb(0, 51, 81);
 }
 
 .job-card-container {
@@ -222,7 +222,7 @@ nav ul li ul li a:hover {
 }
 
 footer {
-  background-color: rgb(4, 59, 92);
+  background-color: rgb(0, 51, 81);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -258,14 +258,14 @@ footer {
 
 .flashcard-front {
   background-color: white; /* Front background color */
-  color: rgb(4, 59, 92); /* Front text color */
+  color: rgb(0, 51, 81); /* Front text color */
   padding: 20px;
   font-size: 1.5rem;
   text-align: center;
 }
 
 .flashcard-back {
-  background-color: rgb(4, 59, 92); /* Back background color */
+  background-color: rgb(0, 51, 81); /* Back background color */
   color: white; /* Back text color */
   padding: 20px;
   font-size: 1.5rem;
