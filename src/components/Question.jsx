@@ -65,7 +65,7 @@ const Question = () => {
             id="answer"
             value={userAnswer}
             onChange={handleInputChange}
-            placeholder="Enter net income"
+            placeholder="Enter answer"
             className="answer-input"
           />
           <button type="submit" className="submit-btn">Submit</button>
