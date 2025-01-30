@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Flashcard from '../components/Flashcard';
 import '../styles/index.css';
@@ -9,30 +10,28 @@ const Flashcards = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/flashcards')
-      .then((response) => response.json())
-      .then((data) => {
-        const formattedCards = data.map((card) => ({
+    axios.get('http://127.0.0.1:5000/api/flashcards') // Use axios instead of fetch
+      .then((response) => {
+        const formattedCards = response.data.map((card) => ({
           id: card.id,
           frontHTML: <div className="flashcard-content">{card.title}</div>,
           backHTML: <div className="flashcard-content">{card.description}</div>,
         }));
         setCards(formattedCards);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching flashcards:', error);
-        setLoading(false); // Set loading to false even if there's an error
+        setLoading(false);
       });
   }, []);
 
   if (loading) {
-    return <div>Loading flashcards...</div>; // Display a loading message
+    return <div>Loading flashcards...</div>;
   }
 
   return (
-    <div
-    >
+    <div>
       <Navbar />
       <Flashcard cards={cards} />
     </div>
