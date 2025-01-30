@@ -9,7 +9,7 @@ const Question = () => {
 
   useEffect(() => {
     // Fetch questions from the JSON file
-    fetch('/questions.json')
+    fetch('/data/questions.json')
       .then((response) => response.json())
       .then((data) => setQuestions(data))
       .catch((error) => console.error('Error loading questions:', error));
