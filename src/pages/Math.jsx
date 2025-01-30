@@ -7,6 +7,7 @@ import '../styles/Math.css';
 const Math = () => (
   <div>
     <Header />
+    <Navbar />
     <Question />  {/* Render the Question component */}
   </div>
 );
