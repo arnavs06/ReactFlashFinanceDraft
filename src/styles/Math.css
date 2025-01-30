@@ -10,7 +10,7 @@
   background-color: #ffffff; /* White background for better contrast */
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); /* Darker shadow for more depth */
   text-align: left; /* Align text to the left for better readability */
-  font-family: 'EB Garamond', serif; /* Elegant serif font for a more refined look */
+  font-family: 'Satoshi', sans-serif; /* Elegant serif font for a more refined look */
   margin: 40px auto; /* Center the card with spacing */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
