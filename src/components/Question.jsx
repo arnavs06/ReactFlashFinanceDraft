@@ -8,7 +8,6 @@ const Question = () => {
   const [feedback, setFeedback] = useState('');
 
   useEffect(() => {
-    // Fetch questions from the JSON file
     fetch('/data/questions.json')
       .then((response) => response.json())
       .then((data) => setQuestions(data))
@@ -41,6 +40,12 @@ const Question = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % questions.length);
   };
 
+  const handlePreviousQuestion = () => {
+    setUserAnswer('');
+    setFeedback('');
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + questions.length) % questions.length);
+  };
+
   return (
     <section className="questions-section">
       <h2>Math Interview Style Questions</h2>
@@ -68,7 +73,14 @@ const Question = () => {
 
         {feedback && <p className={`feedback ${feedback === 'Correct!' ? 'correct' : 'incorrect'}`}>{feedback}</p>}
 
-        <button onClick={handleNextQuestion} className="next-btn">Next Question</button>
+        <div className="navigation-buttons">
+          <button onClick={handlePreviousQuestion} className="prev-btn" disabled={currentIndex === 0}>
+            Previous Question
+          </button>
+          <button onClick={handleNextQuestion} className="next-btn">
+            Next Question
+          </button>
+        </div>
       </div>
     </section>
   );
