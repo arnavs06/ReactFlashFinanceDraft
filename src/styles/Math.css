@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+
 .question-card {
-  font-family: 'Merriweather', serif;
+  font-family: 'Satoshi', sans-serif;
   width: 100%;
   max-width: 800px; /* Increased width for a larger card */
   padding: 40px;
@@ -19,7 +21,7 @@
 }
 
 .question-title {
-  font-family: 'Merriweather', serif;
+  font-family: 'Satoshi', sans-serif;
   font-size: 2rem; /* Larger font for the question title */
   margin-bottom: 20px;
   color: rgb(0, 51, 81);/* Primary theme color for the title */
@@ -27,7 +29,7 @@
 }
 
 .question-text {
-  font-family: 'Merriweather', serif;
+  font-family: 'Satoshi', sans-serif;
   font-size: 1.6rem; /* Larger text for the question description */
   margin-bottom: 40px;
   color: rgb(60, 60, 60); /* Darker gray text for the question description */
@@ -36,7 +38,7 @@
 }
 
 .answer-section {
-  font-family: 'Merriweather', serif;
+  font-family: 'Satoshi', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 20px;
