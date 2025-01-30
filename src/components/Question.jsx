@@ -74,10 +74,10 @@ const Question = () => {
         {feedback && <p className={`feedback ${feedback === 'Correct!' ? 'correct' : 'incorrect'}`}>{feedback}</p>}
 
         <div className="navigation-buttons">
-          <button onClick={handlePreviousQuestion} className="prev-btn" disabled={currentIndex === 0}>
+          <button onClick={handlePreviousQuestion} className="prev-next-btn" disabled={currentIndex === 0}>
             Previous Question
           </button>
-          <button onClick={handleNextQuestion} className="next-btn">
+          <button onClick={handleNextQuestion} className="prev-next-btn">
             Next Question
           </button>
         </div>
