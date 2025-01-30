@@ -1,0 +1,24 @@
+[
+  {
+    "question": "What is the net income if the following details are provided?",
+    "details": {
+      "Revenue": 500000,
+      "Cost of Goods Sold (COGS)": 300000,
+      "Operating Expenses": 100000,
+      "Interest Expense": 20000,
+      "Taxes": 30000
+    },
+    "correctAnswer": 50000
+  },
+  {
+    "question": "Calculate the net profit given the details below:",
+    "details": {
+      "Revenue": 600000,
+      "Cost of Goods Sold (COGS)": 350000,
+      "Operating Expenses": 120000,
+      "Interest Expense": 25000,
+      "Taxes": 40000
+    },
+    "correctAnswer": 65000
+  }
+]
