@@ -10,7 +10,7 @@ const Flashcards = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/api/flashcards') // Use axios instead of fetch
+    axios.get('http://127.0.0.1:5000/api/flashcards') 
       .then((response) => {
         const formattedCards = response.data.map((card) => ({
           id: card.id,
